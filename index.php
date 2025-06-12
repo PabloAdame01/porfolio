@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pablo Adame</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" href="images/perfil.png" type="image/png" /><!-- Cambiar foto -->
+
+</head>
+
+<?php include_once "elements/nav.php"; ?>
+
+
+<body>
+
+
+    <section class="principal w-4/5 mx-auto mt-10 animate-aparecer">
+
+
+        <h1 class=" fs-1 text-blue-600 font-bold text-2xl mb-2.5">HOLA, MI NOMBRE ES PABLO</h1>
+        <h2 class="text-white font-bold text-7xl mb-2.5">Hago paginas web.</h2>
+        <p class="text-white  mt-4 text-2xl font-medium w-4/5">Desarrollador Full Stack con experiencia en frontend y
+            backend. Creo aplicaciones web completas, funcionales y fáciles de usar. Apasionado por el aprendizaje y la
+            mejora continua.
+
+        </p>
+    </section>
+
+
+
+
+    <section>
+        <div class="w-4/5 mx-auto mt-20">
+            <p class="text-white font-bold text-3xl mb-4">Proyectos Destacados</p>
+
+
+            <div class="relative flex w-2/5 h-80"
+                style="background-image: url('images/proyecto1.png'); background-size: cover; background-position: center;">
+
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4 rounded-lg">
+                    <p class="text-white">
+                        Es una página web diseñada para un hotel rural que permite a los usuarios consultar
+                        disponibilidad, realizar reservas de habitaciones y servicios, y conocer las opiniones de otros
+                        clientes.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+
+<?php include_once "elements/footer.php"; ?>
+
+</html>

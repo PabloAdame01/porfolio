@@ -1,0 +1,23 @@
+@import "tailwindcss";
+*{
+    font-family: Fira Code  ;
+    
+}
+body{
+    background-color: #0e141b;
+}
+
+ @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-aparecer {
+    animation: aparecer 0.8s ease-out forwards;
+  }
