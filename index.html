@@ -19,10 +19,10 @@
 <body>
     <nav>
         <div class="mx-auto max-w-7xl px-2 ">
-            <div class="relative flex h-32 items-center justify-between">
+            <div class="relative flex h-32 items-center justify-between sm:flex-row flex-col my-10 sm:my-0">
 
-                <!-- Izquierda: Logo + Usuario -->
-                <div class="flex items-center space-x-4">
+
+                <div class="flex items-center space-x-4 mx-6 sm:mx-0 ">
 
                     <div class="bg-blue-600 rounded-full p-1 w-12 h-12 flex items-center justify-center">
                         <img src="images/perfil.png" alt="imagen" class="rounded-full w-8 h-8">
@@ -32,8 +32,8 @@
                 </div>
 
                 <!-- Centro: Menú -->
-                <div class="flex flex-1 items-center justify-end">
-                    <div class="hidden sm:ml-6 sm:block">
+                <div class="flex flex-1 items-center justify-end ">
+                    <div class="">
                         <div class="flex space-x-4">
                             <a href="index.html"
                                 class="px-3 py-2 text-sm font-medium text-white border-b-4 border-transparent hover:border-blue-800 transition-all duration-400">
@@ -54,13 +54,17 @@
         </div>
     </nav>
 
-    <section class="principal w-sm-3/5  mt-10 animate-aparecer mb-32 mx-6 sm:mx-0">
+    <section class="principal   mt-10 animate-aparecer mb-32 mx-6 sm:mx-0">
 
 
-        <div class="w-sm-4/5 flex flex-col items-start justify-center gap-6">
+        <div class=" md:w-3/5 md:mx-auto flex flex-col items-start justify-center gap-6">
+
             <h1 class=" fs-1 text-blue-600 font-bold text-2xl mb-2.5">HOLA, MI NOMBRE ES PABLO</h1>
+
             <!--<h2 class="text-white font-bold text-7xl mb-2.5">Hago paginas web.</h2> -->
-            <p class="text-white  mt-4 text-2xl font-medium w-sm-4/5">Desarrollador Full Stack con experiencia en frontend
+            <p class="text-white  mt-4 text-xl sm:text-2xl font-medium w-sm-4/5">Desarrollador Full Stack con
+                experiencia en
+                frontend
                 y backend. Creo aplicaciones web completas, funcionales y fáciles de usar. Apasionado por el aprendizaje
                 y la mejora continua.
 
@@ -102,9 +106,9 @@
 
 
     <section id="experiencia">
-        <div class="w-sm-3/5  mt-20 mx-6 sm:mx-0">
-            <p class="text-white font-bold text-2xl text-sm-4xl flex items-center gap-2.5"><svg class="size-8" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+        <div class="md:w-3/5 md:mx-auto  mt-20 mx-6 sm:mx-0">
+            <p class="text-white font-bold text-2xl text-sm-4xl flex items-center gap-2.5"><svg class="size-8"
+                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
@@ -113,15 +117,15 @@
                     <path d="M3 13a20 20 0 0 0 18 0"></path>
                 </svg>Experiencia laboral</p>
 
-            <div class="grid grid-cols-1 grid-md-cols-3 gap-12 mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-5 md:mt-20">
 
-                <div class="col-span-1">
+                <div class="col-span-1 md:col-span-1">
                     <p class="text-indigo-900 text-3xl">Desarollador Web</p>
                     <a href="https://www.marnastudio.com/" class="text-white text-xl mt-4">MarnaStudio</a>
                     <p class="text-gray-400 text-sm mt-4 ">Junio 2025</p>
 
                 </div>
-                <div class="col-span-2">
+                <div class=" md:col-span-2">
                     <p class="text-gray-400 text-xl">Durante mis prácticas he trabajado en el <span
                             class="text-indigo-900">desarrollo web con
                             WordPress </span>, realizando tareas como la personalización de temas, gestión de bases de
@@ -139,7 +143,7 @@
 
 
     <section id="proyectos">
-        <div class="w-sm-3/5  mt-20 mx-6 sm:mx-0">
+        <div class="sm:w-3/5 sm:mx-auto mt-20 mx-6 ">
             <p class="text-white font-bold text-4xl flex items-center gap-2.5"><svg
                     class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -151,7 +155,7 @@
 
             <div class=" flex mt-10">
 
-                <div class="grid grid-cols-1 grid-sm-cols-3 gap-11">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-11">
                     <div class="col-span-2">
                         <img src="images/proyecto1.png" alt="proyecto1" class="">
                     </div>
