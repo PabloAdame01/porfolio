@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+
+
+
+  if (localStorage.getItem('darkMode') === null) {
+    localStorage.setItem('darkMode', 'true');
+  }
+
+
   // Al cargar la página, aplicar el modo oscuro si está guardado
   if (localStorage.getItem('darkMode') === 'true') {
     $('html').addClass('dark');

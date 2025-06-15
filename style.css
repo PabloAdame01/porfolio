@@ -23,3 +23,27 @@
 .animate-aparecer {
   animation: aparecer 0.8s ease-out forwards;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.btn-trabajo .iconoTrabajo {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, width 0.3s ease, transform 0.3s ease;
+}
+
+.btn-trabajo:hover .iconoTrabajo {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+  transform: translateX(0);
+}
+
