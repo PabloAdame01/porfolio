@@ -1,23 +1,125 @@
-@import "tailwindcss";
-*{
-    font-family: Fira Code  ;
-    
-}
-body{
-    background-color: #0e141b;
-}
+ * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .tech-badge {
+            transition: all 0.2s ease;
+        }
+        
+        .tech-badge:hover {
+            transform: scale(1.05);
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            margin: 16px auto 0;
+            border-radius: 2px;
+        }
 
- @keyframes aparecer {
-    from {
-      opacity: 0;
-      transform: translateY(100px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+        /* Animación de entrada suave para secciones */
+        @keyframes fade-up {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-  .animate-aparecer {
-    animation: aparecer 0.8s ease-out forwards;
-  }
+        .animate-fade-up {
+            opacity: 0;
+            animation: fade-up 0.7s ease-out forwards;
+        }
+
+        /* Modo oscuro: se activa añadiendo la clase .dark en <html> */
+        html.dark body {
+            background-color: #020617; /* slate-950 */
+            color: #e5e7eb; /* slate-200 */
+        }
+
+        html.dark nav {
+            background-color: rgba(15, 23, 42, 0.9); /* slate-900 */
+        }
+
+        html.dark a {
+            color: #e5e7eb;
+        }
+
+        html.dark a:hover {
+            color: #c4b5fd; /* purple-300 aprox */
+        }
+
+        html.dark #proyectos,
+        html.dark #sobre-mi {
+            background-color: #020617;
+        }
+
+        html.dark .card-hover {
+            background-color: #0f172a; /* slate-900 */
+            color: #e5e7eb;
+        }
+
+        html.dark .card-hover h3 {
+            color: #e5e7eb;
+        }
+
+        html.dark .card-hover p,
+        html.dark .card-hover span {
+            color: #cbd5f5;
+        }
+
+        html.dark .bg-gray-50,
+        html.dark .bg-white {
+            background-color: #020617;
+        }
+
+        html.dark .text-gray-900 {
+            color: #e5e7eb;
+        }
+
+        html.dark .text-gray-600,
+        html.dark .text-gray-700 {
+            color: #cbd5f5;
+        }
+
+        /* Badges de stack en modo oscuro */
+        html.dark .tech-badge {
+            background-color: rgba(15, 23, 42, 0.9); /* fondo oscuro para chips */
+            color: #e5e7eb; /* texto claro y legible */
+            border: 1px solid rgba(148, 163, 184, 0.6); /* borde sutil */
+        }
+
+        /* Badges de tecnologías en tarjetas de proyectos (bg-purple-100) en modo oscuro */
+        html.dark .card-hover span.bg-purple-100 {
+            background-color: rgba(88, 28, 135, 0.55); /* púrpura oscuro translúcido */
+            color: #f9fafb; /* casi blanco */
+            border: 1px solid rgba(192, 132, 252, 0.7); /* borde púrpura suave */
+        }
